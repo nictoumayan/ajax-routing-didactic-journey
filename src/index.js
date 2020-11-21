@@ -2,10 +2,9 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
-import axios from "axios";
+import axios from "./axios";
 import registerServiceWorker from "./registerServiceWorker";
 
-//axios.defaults.baseURL = "https://jsonplaceholder.typicode.com";
 axios.defaults.headers.common["Authorization"] = "AUTH_TOKEN";
 axios.defaults.headers.post["Content-Type"] = "application-json";
 
